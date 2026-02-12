@@ -1,7 +1,7 @@
 NIT Patna RoboticsClub Website
 Project Overview
 
-live demo:- https://codewithadi7.github.io/Robotics-Club-Website-NITP/
+live demo:- https://codewithdeepak99.github.io/Robotics-Club-Website-NITP/
 
 
 This repository hosts the source code for the NIT Patna Robotics Club web platform.

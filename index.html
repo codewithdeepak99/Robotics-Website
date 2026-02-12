@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Patna Robotics Club | Innovate. Build. Dominate.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="particles-js"></canvas>
+
+    <header>
+        <div class="logo">
+            <img src="Robotics Club Logo.png" alt="Logo" style="height: 40px; margin-right:10px;">
+            NITP <span>ROBOTICS</span>
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>ENGINEERING <br> THE FUTURE</h1>
+            <p>The official Robotics Club of NIT Patna. We are a community of creators, engineers, and visionaries building tomorrow's technology today.</p>
+            <div class="cta-group">
+                <a href="projects.html" class="btn btn-primary">View Projects</a>
+                <a href="about.html" class="btn btn-secondary">About Us</a>
+            </div>
+        </section>
+
+        <section id="featured-projects">
+            <div class="section-header">
+                <h2>Featured Innovation</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="card">
+                    <div class="card-img-box">
+                        <img src="projects/Self balancing bot.webp" alt="Self Balancing Bot">
+                    </div>
+                    <div class="card-content">
+                        <h3>Self Balancing Bot</h3>
+                        <p>An inverted pendulum system using MPU6050 sensors and PID control algorithms for real-time equilibrium.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-box">
+                        <img src="projects/Mark 1.6.png" alt="Mark 1.6 Arm">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mark 1.6 Arm</h3>
+                        <p>Wireless Bluetooth-controlled robotic arm mounted on a 4WD chassis with 5 degrees of freedom.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-box">
+                        <img src="projects/pluto x.png" alt="Pluto X">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pluto X Drone</h3>
+                        <p>Open-source nano drone capable of autonomous flight and ROS integration for aerial mapping.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>NITP Robotics</h4>
+                <p>Innovating the future through robotics, AI, and engineering excellence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/robotics-club-nit-patna/">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/robotics_club_nitp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/robonitp">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 NIT Patna Robotics Club. Built with precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

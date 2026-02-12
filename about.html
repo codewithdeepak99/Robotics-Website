@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NIT Patna Robotics Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-container {
+            padding: 0 10% 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-bottom: 80px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* "Mission" Box Styling */
+        .highlight-box {
+            flex: 1;
+            min-width: 300px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 86, 179, 0.05));
+            border: 1px solid var(--primary);
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        .highlight-box::before {
+            content: '"';
+            position: absolute;
+            top: -25px;
+            left: 30px;
+            font-size: 6rem;
+            color: var(--primary);
+            opacity: 0.3;
+            font-family: serif;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles-js"></canvas>
+
+    <header>
+        <div class="logo">NITP <span>ROBOTICS</span></div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="section-header">
+            <h2>Our Story</h2>
+        </div>
+
+        <div class="about-container">
+            
+            <div class="about-section">
+                <div class="about-text">
+                    <h3 style="color:var(--text-main); font-family:var(--font-head); margin-bottom:15px; font-size:1.5rem;">Who We Are</h3>
+                    <p>The Robotics Club of NIT Patna has been an embodiment of innovation since its inception in 2015–16 under the guidance of <strong>Mr. Nripendra Saroj</strong>. Our club carries a proud legacy of excellence, collaboration, and technological exploration.</p>
+                    <p>Our members range from seasoned programmers and creative designers to hardware enthusiasts. We have represented NIT Patna at prestigious platforms such as the <strong>Smart India Hackathon</strong>.</p>
+                </div>
+                <div class="highlight-box">
+                    <h4 style="color:var(--primary); margin-bottom:15px; font-family:var(--font-head);">Our Mission</h4>
+                    <p style="color:var(--text-main); font-size: 1.1rem;">To continuously strive to enhance students’ technical skills while nurturing curiosity in the fascinating world of robotics, automation, and electronics.</p>
+                </div>
+            </div>
+
+            <div class="about-section" style="flex-direction: row-reverse;">
+                <div class="about-text">
+                    <h3 style="color:var(--text-main); font-family:var(--font-head); margin-bottom:15px; font-size:1.5rem;">What We Do</h3>
+                    <p>Ever wondered how robots think, move, or make decisions? We blend mechanical design, electronics, programming, and AI to turn curiosity into reality.</p>
+                    <p>We believe in learning by building. Together, we work, compete, and evolve.</p>
+                    <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem; letter-spacing: 1px;">#HailRobotics</p>
+                </div>
+                <div style="flex:1; display:flex; justify-content:center; align-items:center;">
+                    <img src="Robotics Club Logo.png" alt="Club Logo" style="opacity:0.8; max-width:200px; filter: drop-shadow(0 0 20px rgba(0,212,255,0.3));">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright"><p>© 2026 NIT Patna Robotics Club.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

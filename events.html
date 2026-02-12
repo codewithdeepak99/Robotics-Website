@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | NIT Patna Robotics Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Styles for Event Cards */
+        .flagship-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 10;
+            box-shadow: 0 0 15px rgba(255, 0, 85, 0.6);
+            letter-spacing: 1px;
+        }
+        
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 0 10% 100px;
+        }
+
+        .event-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .event-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .event-card:hover .event-img {
+            transform: scale(1.05);
+        }
+
+        .event-content {
+            padding: 22px;
+        }
+
+        .event-content h3 {
+            font-family: var(--font-head);
+            color: var(--text-main);
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .event-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles-js"></canvas>
+
+    <header>
+        <div class="logo">NITP <span>ROBOTICS</span></div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="section-header">
+            <h2>Upcoming Events</h2>
+            <p style="color:var(--text-muted); margin-top:10px;">Compete, Learn, and Win.</p>
+        </div>
+
+        <div class="event-grid">
+            
+            <article class="event-card">
+                <div class="flagship-badge">FLAGSHIP</div>
+                <img src="events/Robowar.jpg" alt="Robowar" class="event-img">
+                <div class="event-content">
+                    <h3>Robowar</h3>
+                    <p>The ultimate test of engineering skill where combat robots clash in an intense arena battle.</p>
+                    <p style="color: var(--primary); font-weight: bold; border-top: 1px solid rgba(255,255,255,0.1); padding-top:10px;">Prize Pool: ₹15,000</p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="events/Fresher's Orientation.jpg" alt="Orientation" class="event-img">
+                <div class="event-content">
+                    <h3>Fresher's Orientation</h3>
+                    <p>An interactive session designed for freshers packed with fun activities, learning, and club insights.</p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="events/Arduino Jam.jpg" alt="Arduino Jam" class="event-img">
+                <div class="event-content">
+                    <h3>Arduino Jam</h3>
+                    <p>Hands-on workshop covering Arduino fundamentals, sensors, and circuit simulation basics.</p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="events/Digital Detective.jpg" alt="Digital Detective" class="event-img">
+                <div class="event-content">
+                    <h3>Digital Detective</h3>
+                    <p>A 24-hour technical treasure hunt testing logic, cryptography, and problem-solving skills.</p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="events/Codjuring.jpg" alt="Codejuring" class="event-img">
+                <div class="event-content">
+                    <h3>Codejuring</h3>
+                    <p>Competitive aptitude and coding challenge designed to assess logical thinking and speed.</p>
+                </div>
+            </article>
+
+             <article class="event-card">
+                <img src="events/Hack o Heist.jpg" alt="Hack O Heist" class="event-img">
+                <div class="event-content">
+                    <h3>Hack O Heist</h3>
+                    <p>36-hour hackathon inspired by Money Heist to build innovative solutions to real-world problems.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="copyright"><p>© 2026 NIT Patna Robotics Club. Built for the Future.</p></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

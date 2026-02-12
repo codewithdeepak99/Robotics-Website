@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | NIT Patna Robotics Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-card-advanced {
+            position: relative;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+        }
+        
+        .project-card-advanced img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .project-card-advanced:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Gradient Overlay Text */
+        .project-info-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #020408 10%, rgba(2, 4, 8, 0.8) 50%, rgba(2, 4, 8, 0.4) 100%);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transform: translateY(100px); /* Initially hide description */
+            transition: transform 0.4s ease;
+        }
+
+        .project-card-advanced:hover .project-info-overlay {
+            transform: translateY(0);
+            background: linear-gradient(to top, #020408 20%, rgba(2, 4, 8, 0.9) 100%);
+        }
+
+        .project-info-overlay h3 {
+            color: var(--primary);
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+            transform: translateY(-100px); /* Keep title visible */
+            transition: transform 0.4s ease;
+        }
+
+        .project-card-advanced:hover .project-info-overlay h3 {
+            transform: translateY(0);
+        }
+
+        .project-info-overlay p {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0;
+            transition: opacity 0.3s ease 0.1s;
+        }
+
+        .project-card-advanced:hover .project-info-overlay p {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles-js"></canvas>
+    
+    <header>
+        <div class="logo">
+            NITP <span>ROBOTICS</span>
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="section-header">
+            <h2>Our Innovation Lab</h2>
+            <p style="color:var(--text-muted); margin-top:10px;">Exploring the frontiers of automation and robotics.</p>
+        </div>
+
+        <div class="projects-grid">
+            
+            <div class="project-card-advanced">
+                <img src="projects/Self balancing bot.webp" alt="Self Balancing Bot">
+                <div class="project-info-overlay">
+                    <h3>Self Balancing Bot</h3>
+                    <p>A self-balancing robot works on the principle of an inverted pendulum. It continuously measures tilt using an MPU6050 sensor and applies real-time motor correction to maintain balance.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/Mark 1.6.png" alt="Mark 1.6">
+                <div class="project-info-overlay">
+                    <h3>Mark 1.6</h3>
+                    <p>Mark 1.6 is a Bluetooth-controlled robotic arm mounted on a 4WD chassis. It uses a 3D-printed arm and NRF modules for wireless communication, making it flexible, lightweight, and cost-effective.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/line follower bot.png" alt="Line Follower Bot">
+                <div class="project-info-overlay">
+                    <h3>Line Follower Bot</h3>
+                    <p>The line follower robot tracks a predefined path using IR sensors. Real-time sensor feedback enables smooth and accurate navigation, commonly used in automation and robotics competitions.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/pluto x.png" alt="Pluto X">
+                <div class="project-info-overlay">
+                    <h3>Pluto X</h3>
+                    <p>Pluto X is an open-source nano drone developed at IIT Bombay. It supports Wi-Fi camera streaming, ROS integration, and autonomous flight experiments.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/hexapod.png" alt="Hexapod">
+                <div class="project-info-overlay">
+                    <h3>Hexapod</h3>
+                    <p>Hexapod robots provide stable movement across uneven terrain. Built using Arduino Nano and servo motors, it enables multi-degree freedom and gait experimentation.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/3D Printing.png" alt="3D Printing">
+                <div class="project-info-overlay">
+                    <h3>3D Printing</h3>
+                    <p>The creation of 3D printed objects using additive processes. We utilize this to create custom chassis, gears, and structural components for our robots.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/Automated bot.png" alt="Automated Bot">
+                <div class="project-info-overlay">
+                    <h3>Automated Bot</h3>
+                    <p>An autonomous bot that navigates walls using sharp laser sensors. It implements a closed-loop feedback mechanism to correct alignment and count laps/objects.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/Radar Navigation.png" alt="Radar Navigation">
+                <div class="project-info-overlay">
+                    <h3>Radar Navigation</h3>
+                    <p>A sophisticated navigation system utilizing radar technology for obstacle detection, mapping, and path planning in complex environments.</p>
+                </div>
+            </div>
+
+            <div class="project-card-advanced">
+                <img src="projects/Drone.png" alt="Drone">
+                <div class="project-info-overlay">
+                    <h3>Drone</h3>
+                    <p>Custom-built aerial vehicles designed for surveillance, aerial photography, and stability testing under various atmospheric conditions.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright"><p>© 2026 NIT Patna Robotics Club. Built for the Future.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
